@@ -31,5 +31,7 @@ Una vez dentro, verás el "Environment" local. Al hacer clic, accederás al dash
 *   **Images**: Imágenes Docker descargadas en tu sistema.
 *   **Volumes**: Volúmenes de datos persistentes.
 
-![Placeholder para imagen de dashboard Portainer](assets/placeholder_portainer.png)
-*Imagen representativa del dashboard de Portainer.*
+![Dashboard de Portainer](assets/docker portainer2.png)
+![Detalle de contenedores](assets/docker portainer3.png)
+
+
