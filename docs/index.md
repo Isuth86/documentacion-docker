@@ -6,8 +6,9 @@ Bienvenido a la documentación técnica del proyecto de Administración de Siste
 
 Este proyecto tiene como objetivo documentar el despliegue y configuración de servicios esenciales utilizando **Docker**. Específicamente, se cubren dos casos prácticos:
 
-1.  **LAMP + WordPress**: Creación de un entorno de servidor web completo (Linux, Apache, MySQL/MariaDB, PHP) para alojar un sitio de WordPress.
-2.  **Portainer CE**: Implementación de una interfaz gráfica para gestionar contenedores Docker de manera eficiente.
+1.  **LAMP + WordPress**: Creación de un entorno de servidor web completo (Linux, Apache, MySQL/MariaDB, PHP) para alojar un sitio de WordPress en un único contenedor.
+2.  **WordPress + MariaDB (Contenedores Separados)**: Despliegue modular utilizando una red Docker para conectar un contenedor de aplicación y otro de base de datos.
+3.  **Portainer CE**: Implementación de una interfaz gráfica para gestionar contenedores Docker de manera eficiente.
 
 ## Estructura de la Documentación
 

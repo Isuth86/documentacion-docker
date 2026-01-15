@@ -3,7 +3,8 @@ from pypdf import PdfReader
 
 pdf_files = [
     "Docker LAMP+WORDPRESS.pdf",
-    "ISMAEL BERMÚDEZ CASO DOCKER CON PORTAINER.pdf"
+    "ISMAEL BERMÚDEZ CASO DOCKER CON PORTAINER.pdf",
+    "ISMAEL BERMÚDEZ WORDPRESS + MARIADB.pdf"
 ]
 
 output_file = "extracted_content.txt"

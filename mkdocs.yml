@@ -30,7 +30,8 @@ theme:
 nav:
   - Inicio: index.md
   - Introducción: introduccion.md
-  - Instalación y Requisitos: instalacion.md
+  - Instalación (LAMP Mono-container): instalacion.md
+  - Práctica WP + MariaDB (Multi-container): wordpress_mariadb.md
   - Uso y Funcionamiento: uso.md
   - Conclusiones: conclusiones.md
 
