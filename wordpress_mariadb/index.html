@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../wordpress_mariadb/">
+        <link rel="prev" href="../instalacion/">
       
       
-        <link rel="next" href="../conclusiones/">
+        <link rel="next" href="../uso/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Uso y Funcionamiento - Documentación Servicios Docker</title>
+        <title>Práctica WP + MariaDB (Multi-container) - Documentación Servicios Docker</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uso-y-funcionamiento" class="md-skip">
+        <a href="#caso-practico-wordpress-mariadb-contenedores-separados" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Uso y Funcionamiento
+              Práctica WP + MariaDB (Multi-container)
             
           </span>
         </div>
@@ -340,33 +340,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../wordpress_mariadb/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Práctica WP + MariaDB (Multi-container)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -386,7 +359,7 @@
   <span class="md-ellipsis">
     
   
-    Uso y Funcionamiento
+    Práctica WP + MariaDB (Multi-container)
   
 
     
@@ -404,7 +377,7 @@
   <span class="md-ellipsis">
     
   
-    Uso y Funcionamiento
+    Práctica WP + MariaDB (Multi-container)
   
 
     
@@ -430,10 +403,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#acceso-a-wordpress" class="md-nav__link">
+  <a href="#1-configuracion-de-red" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Acceso a WordPress
+        1. Configuración de Red
       
     </span>
   </a>
@@ -441,22 +414,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gestion-con-portainer" class="md-nav__link">
+  <a href="#2-despliegue-de-mariadb" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gestión con Portainer
+        2. Despliegue de MariaDB
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Gestión con Portainer">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-despliegue-de-wordpress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Despliegue de WordPress
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Despliegue de WordPress">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#panel-de-control" class="md-nav__link">
+  <a href="#configuracion-inicial" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Panel de Control
+        Configuración Inicial
       
     </span>
   </a>
@@ -468,10 +452,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#4-migracion-de-mariadb-actualizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Migración de MariaDB (Actualización)
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uso y Funcionamiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -530,10 +552,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#acceso-a-wordpress" class="md-nav__link">
+  <a href="#1-configuracion-de-red" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Acceso a WordPress
+        1. Configuración de Red
       
     </span>
   </a>
@@ -541,22 +563,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gestion-con-portainer" class="md-nav__link">
+  <a href="#2-despliegue-de-mariadb" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gestión con Portainer
+        2. Despliegue de MariaDB
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Gestión con Portainer">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-despliegue-de-wordpress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Despliegue de WordPress
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Despliegue de WordPress">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#panel-de-control" class="md-nav__link">
+  <a href="#configuracion-inicial" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Panel de Control
+        Configuración Inicial
       
     </span>
   </a>
@@ -565,6 +598,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-migracion-de-mariadb-actualizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Migración de MariaDB (Actualización)
+      
+    </span>
+  </a>
   
 </li>
       
@@ -588,39 +632,120 @@
   
 
 
-<h1 id="uso-y-funcionamiento">Uso y Funcionamiento</h1>
-<p>Una vez completada la instalación, podemos acceder y utilizar los servicios.</p>
-<h2 id="acceso-a-wordpress">Acceso a WordPress</h2>
-<p>Para acceder a nuestro sitio WordPress configurado en el contenedor LAMP:</p>
+<h1 id="caso-practico-wordpress-mariadb-contenedores-separados">Caso Práctico: WordPress + MariaDB (Contenedores Separados)</h1>
+<p>En esta práctica, desplegaremos un CMS WordPress conectando dos contenedores separados a través de una red Docker personalizada:</p>
 <ol>
-<li>Abre tu navegador web.</li>
-<li>Navega a la URL: <code>http://localhost:8080/blog</code> (o la ruta que hayas configurado).</li>
-<li>Si la configuración es correcta, verás el instalador de WordPress o la página de inicio.</li>
+<li><strong>Contenedor MariaDB</strong>: Servidor de base de datos.</li>
+<li><strong>Contenedor WordPress</strong>: Servidor web con Apache+PHP y WordPress preinstalado.</li>
 </ol>
-<details class="info">
-<summary>Solución de Problemas</summary>
-<p>Si ves un error, verifica que el archivo <code>/etc/wordpress/config-localhost.php</code> esté correctamente configurado con las credenciales de la base de datos que creaste.</p>
-</details>
-<h2 id="gestion-con-portainer">Gestión con Portainer</h2>
-<p>Para gestionar tus contenedores de forma gráfica:</p>
+<p>Además, realizaremos una <strong>migración de versión</strong> de MariaDB conservando los datos.</p>
+<h2 id="1-configuracion-de-red">1. Configuración de Red</h2>
+<p>Primero, creamos una red Docker para permitir la comunicación entre los contenedores.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>network<span class="w"> </span>create<span class="w"> </span>redwp
+</code></pre></div>
+<p><img alt="Creación de red" src="../assets/docker%20wordpressmariadb.png" /></p>
+<p>Para verificar que se ha creado correctamente:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>network<span class="w"> </span>ls
+</code></pre></div></p>
+<p><img alt="Listado de redes" src="../assets/docker%20wordpressmariadb1.png" /></p>
+<h2 id="2-despliegue-de-mariadb">2. Despliegue de MariaDB</h2>
+<p>Creamos el contenedor de base de datos conectado a la red <code>redwp</code> y usando un volumen para persistencia.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>nuestromariadb<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span>--network<span class="w"> </span>redwp<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>-v<span class="w"> </span>/home/sergi/mariadbdata:/var/lib/mysql<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">MARIADB_ROOT_PASSWORD</span><span class="o">=</span>cefireroot<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">MARIADB_USER</span><span class="o">=</span>cefireuser<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">MARIADB_PASSWORD</span><span class="o">=</span>cefirepass<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">MARIADB_DATABASE</span><span class="o">=</span>cefiredb<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span>-d<span class="w"> </span>mariadb:10.6
+</code></pre></div>
+<p><img alt="Ejecución MariaDB" src="../assets/docker%20wordpressmariadb2.png" />
+<img alt="Verificación MariaDB" src="../assets/docker%20wordpressmariadb3.png" /></p>
+<p>Variables de entorno utilizadas:
+*   <code>MARIADB_ROOT_PASSWORD</code>: Contraseña del usuario root.
+*   <code>MARIADB_USER</code>: Nuevo usuario creado.
+*   <code>MARIADB_PASSWORD</code>: Contraseña del nuevo usuario.
+*   <code>MARIADB_DATABASE</code>: Nombre de la base de datos inicial.</p>
+<h2 id="3-despliegue-de-wordpress">3. Despliegue de WordPress</h2>
+<p>Lanzamos el contenedor de WordPress, conectándolo a la misma red y exponiendo el puerto 8080.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>nuestrowp<span class="w"> </span>--network<span class="w"> </span>redwp<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:80<span class="w"> </span>-d<span class="w"> </span>wordpress
+</code></pre></div>
+<p><img alt="Ejecución WordPress" src="../assets/docker%20wordpressmariadb4.png" />
+<img alt="Descarga y ejecución" src="../assets/docker%20wordpressmariadb5.png" /></p>
+<h3 id="configuracion-inicial">Configuración Inicial</h3>
 <ol>
-<li>Abre el navegador y ve a <code>https://localhost:9443</code>.</li>
-<li>Acepta el certificado de seguridad (autofirmado por defecto).</li>
-<li>Crea el usuario administrador inicial.<ul>
-<li><strong>Usuario</strong>: <code>admin</code></li>
-<li><strong>Contraseña</strong>: (mínimo 12 caracteres, ej: <code>cefireadmindocker</code>)</li>
-</ul>
+<li>Accede a <code>http://localhost:8080</code>.</li>
+<li>Selecciona el idioma (Español).</li>
+</ol>
+<p><img alt="Selección de idioma" src="../assets/docker%20wordpressmariadb6.png" /></p>
+<ol>
+<li>Configura la conexión a la base de datos:</li>
+</ol>
+<p><img alt="Configuración BDD" src="../assets/docker%20wordpressmariadb7.png" /></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Campo</th>
+<th style="text-align: left;">Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nombre de la base de datos</strong></td>
+<td style="text-align: left;"><code>cefiredb</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Nombre de usuario</strong></td>
+<td style="text-align: left;"><code>cefireuser</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contraseña</strong></td>
+<td style="text-align: left;"><code>cefirepass</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Servidor de la base de datos</strong></td>
+<td style="text-align: left;"><code>nuestromariadb</code> (Nombre del contenedor)</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Formulario BDD relleno" src="../assets/docker%20wordpressmariadb8.png" /></p>
+<ol>
+<li>Finaliza la instalación creando el usuario administrador de WordPress.</li>
+</ol>
+<p><img alt="Instalación exitosa" src="../assets/docker%20wordpressmariadb9.png" />
+<img alt="Escritorio WP" src="../assets/docker%20wordpressmariadb10.png" /></p>
+<h2 id="4-migracion-de-mariadb-actualizacion">4. Migración de MariaDB (Actualización)</h2>
+<p>El objetivo es actualizar la versión de MariaDB de 10.6 a 10.7 sin perder datos.</p>
+<ol>
+<li>
+<p><strong>Detener y eliminar</strong> el contenedor antiguo:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>stop<span class="w"> </span>nuestromariadb
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>docker<span class="w"> </span>rm<span class="w"> </span>nuestromariadb
+</code></pre></div>
+    <em>Nota: Los datos persisten en <code>/home/sergi/mariadbdata</code> (en el host).</em></p>
+<p><img alt="Parada y borrado de contenedor" src="../assets/docker%20wordpressmariadb11.png" /></p>
+</li>
+<li>
+<p><strong>Crear el nuevo contenedor</strong> (versión 10.7) mapeando el mismo volumen:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>nuestromariadb<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span>--network<span class="w"> </span>redwp<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span>-v<span class="w"> </span>/home/sergi/mariadbdata:/var/lib/mysql<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">MARIADB_ROOT_PASSWORD</span><span class="o">=</span>cefireroot<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">MARIADB_USER</span><span class="o">=</span>cefireuser<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">MARIADB_PASSWORD</span><span class="o">=</span>cefirepass<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">MARIADB_DATABASE</span><span class="o">=</span>cefiredb<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span>-d<span class="w"> </span>mariadb:10.7
+</code></pre></div></p>
+<p><img alt="Nueva versión MariaDB" src="../assets/docker%20wordpressmariadb12.png" /></p>
+</li>
+<li>
+<p><strong>Verificación</strong>:
+    Al acceder de nuevo a <code>http://localhost:8080</code>, el sitio debe funcionar correctamente, indicando que la base de datos se ha conservado y migrado con éxito.</p>
+<p><img alt="Funcionamiento correcto 1" src="../assets/docker%20wordpressmariadb13.png" />
+<img alt="Funcionamiento correcto 2" src="../assets/docker%20wordpressmariadb14.png" />
+<img alt="Funcionamiento correcto 3" src="../assets/docker%20wordpressmariadb15.png" /></p>
 </li>
 </ol>
-<h3 id="panel-de-control">Panel de Control</h3>
-<p>Una vez dentro, verás el "Environment" local. Al hacer clic, accederás al dashboard (tablero) donde puedes ver:</p>
-<ul>
-<li><strong>Containers</strong>: Lista de contenedores activos/inactivos. Puedes iniciar (<code>start</code>), detener (<code>stop</code>) o eliminar (<code>remove</code>) contenedores (incluyendo el de LAMP).</li>
-<li><strong>Images</strong>: Imágenes Docker descargadas en tu sistema.</li>
-<li><strong>Volumes</strong>: Volúmenes de datos persistentes.</li>
-</ul>
-<p><img alt="Dashboard de Portainer" src="../assets/docker%20portainer2.png" />
-<img alt="Detalle de contenedores" src="../assets/docker%20portainer3.png" /></p>
 
 
 
