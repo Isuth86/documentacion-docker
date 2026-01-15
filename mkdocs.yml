@@ -1,0 +1,45 @@
+site_name: Documentación Servicios Docker
+site_description: Documentación técnica desplegar servicios en Docker (LAMP+WordPress y Portainer).
+site_author: Ismael Bermúdez Del Río
+repo_url: https://github.com/tu-usuario/nombre-repo
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Inicio: index.md
+  - Introducción: introduccion.md
+  - Instalación y Requisitos: instalacion.md
+  - Uso y Funcionamiento: uso.md
+  - Conclusiones: conclusiones.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list

@@ -1,0 +1,5 @@
+site/
+__pycache__/
+*.pyc
+extracted_content.txt
+.DS_Store
