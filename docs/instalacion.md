@@ -11,8 +11,8 @@ Primero creamos un contenedor basado en Ubuntu 22.04, exponiendo el puerto 80 de
 docker run –it –p 8080:80 –name LAMP Ubuntu:22.04 /bin/bash
 ```
 
-![Creación del contenedor LAMP](assets/docker compose.png)
-![Verificación del proceso](assets/docker compose1.png)
+![Creación del contenedor LAMP](assets/docker compose.png){: style="width: 100%; max-width: 600px;"}
+![Verificación del proceso](assets/docker compose1.png){: style="width: 100%; max-width: 600px;"}
 
 ### 1.2 Instalación de Paquetes
 Dentro del contenedor, actualizamos e instalamos los servicios necesarios (Apache, MariaDB, PHP, WordPress).
@@ -27,7 +27,7 @@ Podemos iniciar Apache con:
 service apache2 start
 ```
 
-![Instalación de paquetes](assets/docker compose2.png)
+![Instalación de paquetes](assets/docker compose2.png){: style="width: 100%; max-width: 600px;"}
 
 ### 1.3 Configuración de Apache
 Necesitamos configurar Apache para servir WordPress. Instalamos un editor de texto:
@@ -54,8 +54,8 @@ CREATE USER 'wordpress'@'%' IDENTIFIED BY 'MyPass-2023';
 GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpress'@'%' WITH GRANT OPTION;
 ```
 
-![Configuración MySQL](assets/docker compose3.png)
-![Configuración final](assets/docker compose4.png)
+![Configuración MySQL](assets/docker compose3.png){: style="width: 100%; max-width: 600px;"}
+![Configuración final](assets/docker compose4.png){: style="width: 100%; max-width: 600px;"}
 
 ---
 
@@ -67,7 +67,7 @@ Creamos un volumen para persistir los datos de Portainer:
 docker volume create portainer_data
 ```
 
-![Creación de volumen Portainer](assets/docker portainer.png)
+![Creación de volumen Portainer](assets/docker portainer.png){: style="width: 100%; max-width: 600px;"}
 
 ### 2.2 Ejecutar el Contenedor
 Lanzamos Portainer mapeando los puertos 8000 y 9443:
@@ -80,4 +80,4 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer \
     portainer/portainer-ce:latest
 ```
 
-![Ejecución de Portainer](assets/docker portainer1.png)
+![Ejecución de Portainer](assets/docker portainer1.png){: style="width: 100%; max-width: 600px;"}
