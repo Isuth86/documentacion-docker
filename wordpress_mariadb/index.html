@@ -643,11 +643,11 @@
 <p>Primero, creamos una red Docker para permitir la comunicación entre los contenedores.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>network<span class="w"> </span>create<span class="w"> </span>redwp
 </code></pre></div>
-<p><img alt="Creación de red" src="../assets/docker%20wordpressmariadb.png" /></p>
+<p><img alt="Creación de red" src="../assets/docker%20wordpressmariadb.png" style="width: 100%; max-width: 600px;" /></p>
 <p>Para verificar que se ha creado correctamente:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>network<span class="w"> </span>ls
 </code></pre></div></p>
-<p><img alt="Listado de redes" src="../assets/docker%20wordpressmariadb1.png" /></p>
+<p><img alt="Listado de redes" src="../assets/docker%20wordpressmariadb1.png" style="width: 100%; max-width: 600px;" /></p>
 <h2 id="2-despliegue-de-mariadb">2. Despliegue de MariaDB</h2>
 <p>Creamos el contenedor de base de datos conectado a la red <code>redwp</code> y usando un volumen para persistencia.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>nuestromariadb<span class="w"> </span><span class="se">\</span>
@@ -659,8 +659,8 @@
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">MARIADB_DATABASE</span><span class="o">=</span>cefiredb<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span>-d<span class="w"> </span>mariadb:10.6
 </code></pre></div>
-<p><img alt="Ejecución MariaDB" src="../assets/docker%20wordpressmariadb2.png" />
-<img alt="Verificación MariaDB" src="../assets/docker%20wordpressmariadb3.png" /></p>
+<p><img alt="Ejecución MariaDB" src="../assets/docker%20wordpressmariadb2.png" style="width: 100%; max-width: 600px;" />
+<img alt="Verificación MariaDB" src="../assets/docker%20wordpressmariadb3.png" style="width: 100%; max-width: 600px;" /></p>
 <p>Variables de entorno utilizadas:
 *   <code>MARIADB_ROOT_PASSWORD</code>: Contraseña del usuario root.
 *   <code>MARIADB_USER</code>: Nuevo usuario creado.
@@ -670,18 +670,18 @@
 <p>Lanzamos el contenedor de WordPress, conectándolo a la misma red y exponiendo el puerto 8080.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>nuestrowp<span class="w"> </span>--network<span class="w"> </span>redwp<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:80<span class="w"> </span>-d<span class="w"> </span>wordpress
 </code></pre></div>
-<p><img alt="Ejecución WordPress" src="../assets/docker%20wordpressmariadb4.png" />
-<img alt="Descarga y ejecución" src="../assets/docker%20wordpressmariadb5.png" /></p>
+<p><img alt="Ejecución WordPress" src="../assets/docker%20wordpressmariadb4.png" style="width: 100%; max-width: 600px;" />
+<img alt="Descarga y ejecución" src="../assets/docker%20wordpressmariadb5.png" style="width: 100%; max-width: 600px;" /></p>
 <h3 id="configuracion-inicial">Configuración Inicial</h3>
 <ol>
 <li>Accede a <code>http://localhost:8080</code>.</li>
 <li>Selecciona el idioma (Español).</li>
 </ol>
-<p><img alt="Selección de idioma" src="../assets/docker%20wordpressmariadb6.png" /></p>
+<p><img alt="Selección de idioma" src="../assets/docker%20wordpressmariadb6.png" style="width: 100%; max-width: 500px;" /></p>
 <ol>
 <li>Configura la conexión a la base de datos:</li>
 </ol>
-<p><img alt="Configuración BDD" src="../assets/docker%20wordpressmariadb7.png" /></p>
+<p><img alt="Configuración BDD" src="../assets/docker%20wordpressmariadb7.png" style="width: 100%; max-width: 500px;" /></p>
 <table>
 <thead>
 <tr>
@@ -708,12 +708,12 @@
 </tr>
 </tbody>
 </table>
-<p><img alt="Formulario BDD relleno" src="../assets/docker%20wordpressmariadb8.png" /></p>
+<p><img alt="Formulario BDD relleno" src="../assets/docker%20wordpressmariadb8.png" style="width: 100%; max-width: 500px;" /></p>
 <ol>
 <li>Finaliza la instalación creando el usuario administrador de WordPress.</li>
 </ol>
-<p><img alt="Instalación exitosa" src="../assets/docker%20wordpressmariadb9.png" />
-<img alt="Escritorio WP" src="../assets/docker%20wordpressmariadb10.png" /></p>
+<p><img alt="Instalación exitosa" src="../assets/docker%20wordpressmariadb9.png" style="width: 100%; max-width: 600px;" />
+<img alt="Escritorio WP" src="../assets/docker%20wordpressmariadb10.png" style="width: 100%; max-width: 600px;" /></p>
 <h2 id="4-migracion-de-mariadb-actualizacion">4. Migración de MariaDB (Actualización)</h2>
 <p>El objetivo es actualizar la versión de MariaDB de 10.6 a 10.7 sin perder datos.</p>
 <ol>
@@ -723,7 +723,7 @@
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>docker<span class="w"> </span>rm<span class="w"> </span>nuestromariadb
 </code></pre></div>
     <em>Nota: Los datos persisten en <code>/home/sergi/mariadbdata</code> (en el host).</em></p>
-<p><img alt="Parada y borrado de contenedor" src="../assets/docker%20wordpressmariadb11.png" /></p>
+<p><img alt="Parada y borrado de contenedor" src="../assets/docker%20wordpressmariadb11.png" style="width: 100%; max-width: 600px;" /></p>
 </li>
 <li>
 <p><strong>Crear el nuevo contenedor</strong> (versión 10.7) mapeando el mismo volumen:
@@ -736,14 +736,14 @@
 <a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">MARIADB_DATABASE</span><span class="o">=</span>cefiredb<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span>-d<span class="w"> </span>mariadb:10.7
 </code></pre></div></p>
-<p><img alt="Nueva versión MariaDB" src="../assets/docker%20wordpressmariadb12.png" /></p>
+<p><img alt="Nueva versión MariaDB" src="../assets/docker%20wordpressmariadb12.png" style="width: 100%; max-width: 600px;" /></p>
 </li>
 <li>
 <p><strong>Verificación</strong>:
     Al acceder de nuevo a <code>http://localhost:8080</code>, el sitio debe funcionar correctamente, indicando que la base de datos se ha conservado y migrado con éxito.</p>
-<p><img alt="Funcionamiento correcto 1" src="../assets/docker%20wordpressmariadb13.png" />
-<img alt="Funcionamiento correcto 2" src="../assets/docker%20wordpressmariadb14.png" />
-<img alt="Funcionamiento correcto 3" src="../assets/docker%20wordpressmariadb15.png" /></p>
+<p><img alt="Funcionamiento correcto 1" src="../assets/docker%20wordpressmariadb13.png" style="width: 100%; max-width: 600px;" />
+<img alt="Funcionamiento correcto 2" src="../assets/docker%20wordpressmariadb14.png" style="width: 100%; max-width: 600px;" />
+<img alt="Funcionamiento correcto 3" src="../assets/docker%20wordpressmariadb15.png" style="width: 100%; max-width: 600px;" /></p>
 </li>
 </ol>
 
