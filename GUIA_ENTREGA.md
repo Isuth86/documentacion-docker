@@ -1,6 +1,6 @@
 # Instrucciones de Entrega y Despliegue
 
-¡El proyecto ha sido creado localmente! Ahora debes seguir estos pasos para publicarlo en GitHub y obtener los enlaces para la entrega.
+¡El proyecto ha sido creado localmente! Ahora debes seguir estos pasos para publicarlo en GitHub y obtener los enlaces para la entrega!
 
 ## 1. Crear Repositorio en GitHub
 
