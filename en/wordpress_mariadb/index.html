@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -20,13 +20,13 @@
       
       
         
-          <link rel="alternate" href="./" hreflang="es">
+          <link rel="alternate" href="../../wordpress_mariadb/" hreflang="es">
         
-          <link rel="alternate" href="../en/wordpress_mariadb/" hreflang="en">
+          <link rel="alternate" href="./" hreflang="en">
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
@@ -35,10 +35,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -57,7 +57,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -82,8 +82,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#caso-practico-wordpress-mariadb-contenedores-separados" class="md-skip">
-          Saltar a contenido
+        <a href="#case-study-wordpress-mariadb-separate-containers" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -97,8 +97,8 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href=".." title="Documentación Servicios Docker" class="md-header__button md-logo" aria-label="Documentación Servicios Docker" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../" title="Documentación Servicios Docker" class="md-header__button md-logo" aria-label="Documentación Servicios Docker" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -158,20 +158,20 @@
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+    <button class="md-header__button md-icon" aria-label="Select language">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="./" hreflang="es" class="md-select__link">
+            <a href="../../wordpress_mariadb/" hreflang="es" class="md-select__link">
               Español
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../en/wordpress_mariadb/" hreflang="en" class="md-select__link">
+            <a href="./" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -192,16 +192,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Buscar">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -214,7 +214,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Inicializando búsqueda
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -226,7 +226,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/Isuth86/documentacion-docker" title="Ir al repositorio" class="md-source" data-md-component="source">
+        <a href="https://github.com/Isuth86/documentacion-docker" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
@@ -260,9 +260,9 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Documentación Servicios Docker" class="md-nav__button md-logo" aria-label="Documentación Servicios Docker" data-md-component="logo">
+    <a href="../" title="Documentación Servicios Docker" class="md-nav__button md-logo" aria-label="Documentación Servicios Docker" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -272,7 +272,7 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/Isuth86/documentacion-docker" title="Ir al repositorio" class="md-source" data-md-component="source">
+      <a href="https://github.com/Isuth86/documentacion-docker" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
@@ -292,7 +292,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -419,7 +419,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -428,15 +428,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-configuracion-de-red" class="md-nav__link">
+  <a href="#1-network-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Configuración de Red
+        1. Network Configuration
       
     </span>
   </a>
@@ -444,10 +444,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-despliegue-de-mariadb" class="md-nav__link">
+  <a href="#2-mariadb-deployment" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Despliegue de MariaDB
+        2. MariaDB Deployment
       
     </span>
   </a>
@@ -455,22 +455,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-despliegue-de-wordpress" class="md-nav__link">
+  <a href="#3-wordpress-deployment" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Despliegue de WordPress
+        3. WordPress Deployment
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Despliegue de WordPress">
+    <nav class="md-nav" aria-label="3. WordPress Deployment">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configuracion-inicial" class="md-nav__link">
+  <a href="#initial-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuración Inicial
+        Initial Configuration
       
     </span>
   </a>
@@ -483,10 +483,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-migracion-de-mariadb-actualizacion" class="md-nav__link">
+  <a href="#4-mariadb-migration-update" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Migración de MariaDB (Actualización)
+        4. MariaDB Migration (Update)
       
     </span>
   </a>
@@ -568,7 +568,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -577,15 +577,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-configuracion-de-red" class="md-nav__link">
+  <a href="#1-network-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Configuración de Red
+        1. Network Configuration
       
     </span>
   </a>
@@ -593,10 +593,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-despliegue-de-mariadb" class="md-nav__link">
+  <a href="#2-mariadb-deployment" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Despliegue de MariaDB
+        2. MariaDB Deployment
       
     </span>
   </a>
@@ -604,22 +604,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-despliegue-de-wordpress" class="md-nav__link">
+  <a href="#3-wordpress-deployment" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Despliegue de WordPress
+        3. WordPress Deployment
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Despliegue de WordPress">
+    <nav class="md-nav" aria-label="3. WordPress Deployment">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configuracion-inicial" class="md-nav__link">
+  <a href="#initial-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuración Inicial
+        Initial Configuration
       
     </span>
   </a>
@@ -632,10 +632,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-migracion-de-mariadb-actualizacion" class="md-nav__link">
+  <a href="#4-mariadb-migration-update" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Migración de MariaDB (Actualización)
+        4. MariaDB Migration (Update)
       
     </span>
   </a>
@@ -662,24 +662,24 @@
   
 
 
-<h1 id="caso-practico-wordpress-mariadb-contenedores-separados">Caso Práctico: WordPress + MariaDB (Contenedores Separados)</h1>
-<p>En esta práctica, desplegaremos un CMS WordPress conectando dos contenedores separados a través de una red Docker personalizada:</p>
+<h1 id="case-study-wordpress-mariadb-separate-containers">Case Study: WordPress + MariaDB (Separate Containers)</h1>
+<p>In this practice, we will deploy a WordPress CMS connecting two separate containers through a custom Docker network:</p>
 <ol>
-<li><strong>Contenedor MariaDB</strong>: Servidor de base de datos.</li>
-<li><strong>Contenedor WordPress</strong>: Servidor web con Apache+PHP y WordPress preinstalado.</li>
+<li><strong>MariaDB Container</strong>: Database server.</li>
+<li><strong>WordPress Container</strong>: Web server with Apache+PHP and pre-installed WordPress.</li>
 </ol>
-<p>Además, realizaremos una <strong>migración de versión</strong> de MariaDB conservando los datos.</p>
-<h2 id="1-configuracion-de-red">1. Configuración de Red</h2>
-<p>Primero, creamos una red Docker para permitir la comunicación entre los contenedores.</p>
+<p>Additionally, we will perform a <strong>version migration</strong> of MariaDB while preserving data.</p>
+<h2 id="1-network-configuration">1. Network Configuration</h2>
+<p>First, we create a Docker network to allow communication between containers.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>network<span class="w"> </span>create<span class="w"> </span>redwp
 </code></pre></div>
-<p><img alt="Creación de red" src="../assets/docker%20wordpressmariadb.png" style="width: 100%; max-width: 600px;" /></p>
-<p>Para verificar que se ha creado correctamente:
+<p><img alt="Network Creation" src="../../assets/docker%20wordpressmariadb.png" style="width: 100%; max-width: 600px;" /></p>
+<p>To verify that it has been created correctly:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>network<span class="w"> </span>ls
 </code></pre></div></p>
-<p><img alt="Listado de redes" src="../assets/docker%20wordpressmariadb1.png" style="width: 100%; max-width: 600px;" /></p>
-<h2 id="2-despliegue-de-mariadb">2. Despliegue de MariaDB</h2>
-<p>Creamos el contenedor de base de datos conectado a la red <code>redwp</code> y usando un volumen para persistencia.</p>
+<p><img alt="Network List" src="../../assets/docker%20wordpressmariadb1.png" style="width: 100%; max-width: 600px;" /></p>
+<h2 id="2-mariadb-deployment">2. MariaDB Deployment</h2>
+<p>We create the database container connected to the <code>redwp</code> network and use a volume for persistence.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>nuestromariadb<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span>--network<span class="w"> </span>redwp<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>-v<span class="w"> </span>/home/sergi/mariadbdata:/var/lib/mysql<span class="w"> </span><span class="se">\</span>
@@ -689,74 +689,74 @@
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">MARIADB_DATABASE</span><span class="o">=</span>cefiredb<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span>-d<span class="w"> </span>mariadb:10.6
 </code></pre></div>
-<p><img alt="Ejecución MariaDB" src="../assets/docker%20wordpressmariadb2.png" style="width: 100%; max-width: 600px;" />
-<img alt="Verificación MariaDB" src="../assets/docker%20wordpressmariadb3.png" style="width: 100%; max-width: 600px;" /></p>
-<p>Variables de entorno utilizadas:
-*   <code>MARIADB_ROOT_PASSWORD</code>: Contraseña del usuario root.
-*   <code>MARIADB_USER</code>: Nuevo usuario creado.
-*   <code>MARIADB_PASSWORD</code>: Contraseña del nuevo usuario.
-*   <code>MARIADB_DATABASE</code>: Nombre de la base de datos inicial.</p>
-<h2 id="3-despliegue-de-wordpress">3. Despliegue de WordPress</h2>
-<p>Lanzamos el contenedor de WordPress, conectándolo a la misma red y exponiendo el puerto 8080.</p>
+<p><img alt="MariaDB Execution" src="../../assets/docker%20wordpressmariadb2.png" style="width: 100%; max-width: 600px;" />
+<img alt="MariaDB Verification" src="../../assets/docker%20wordpressmariadb3.png" style="width: 100%; max-width: 600px;" /></p>
+<p>Environment variables used:
+*   <code>MARIADB_ROOT_PASSWORD</code>: Root user password.
+*   <code>MARIADB_USER</code>: New user created.
+*   <code>MARIADB_PASSWORD</code>: Password for the new user.
+*   <code>MARIADB_DATABASE</code>: Initial database name.</p>
+<h2 id="3-wordpress-deployment">3. WordPress Deployment</h2>
+<p>We launch the WordPress container, connecting it to the same network and exposing port 8080.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>nuestrowp<span class="w"> </span>--network<span class="w"> </span>redwp<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:80<span class="w"> </span>-d<span class="w"> </span>wordpress
 </code></pre></div>
-<p><img alt="Ejecución WordPress" src="../assets/docker%20wordpressmariadb4.png" style="width: 100%; max-width: 600px;" />
-<img alt="Descarga y ejecución" src="../assets/docker%20wordpressmariadb5.png" style="width: 100%; max-width: 600px;" /></p>
-<h3 id="configuracion-inicial">Configuración Inicial</h3>
+<p><img alt="WordPress Execution" src="../../assets/docker%20wordpressmariadb4.png" style="width: 100%; max-width: 600px;" />
+<img alt="Download and Run" src="../../assets/docker%20wordpressmariadb5.png" style="width: 100%; max-width: 600px;" /></p>
+<h3 id="initial-configuration">Initial Configuration</h3>
 <ol>
-<li>Accede a <code>http://localhost:8080</code>.</li>
-<li>Selecciona el idioma (Español).</li>
+<li>Access <code>http://localhost:8080</code>.</li>
+<li>Select language (Spanish/English).</li>
 </ol>
-<p><img alt="Selección de idioma" src="../assets/docker%20wordpressmariadb6.png" style="width: 100%; max-width: 500px;" /></p>
+<p><img alt="Language Selection" src="../../assets/docker%20wordpressmariadb6.png" style="width: 100%; max-width: 500px;" /></p>
 <ol>
-<li>Configura la conexión a la base de datos:</li>
+<li>Configure the database connection:</li>
 </ol>
-<p><img alt="Configuración BDD" src="../assets/docker%20wordpressmariadb7.png" style="width: 100%; max-width: 500px;" /></p>
+<p><img alt="DB Configuration" src="../../assets/docker%20wordpressmariadb7.png" style="width: 100%; max-width: 500px;" /></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Campo</th>
-<th style="text-align: left;">Valor</th>
+<th style="text-align: left;">Field</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Nombre de la base de datos</strong></td>
+<td style="text-align: left;"><strong>Database Name</strong></td>
 <td style="text-align: left;"><code>cefiredb</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Nombre de usuario</strong></td>
+<td style="text-align: left;"><strong>Username</strong></td>
 <td style="text-align: left;"><code>cefireuser</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contraseña</strong></td>
+<td style="text-align: left;"><strong>Password</strong></td>
 <td style="text-align: left;"><code>cefirepass</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Servidor de la base de datos</strong></td>
-<td style="text-align: left;"><code>nuestromariadb</code> (Nombre del contenedor)</td>
+<td style="text-align: left;"><strong>Database Host</strong></td>
+<td style="text-align: left;"><code>nuestromariadb</code> (Container Name)</td>
 </tr>
 </tbody>
 </table>
-<p><img alt="Formulario BDD relleno" src="../assets/docker%20wordpressmariadb8.png" style="width: 100%; max-width: 500px;" /></p>
+<p><img alt="Filled DB Form" src="../../assets/docker%20wordpressmariadb8.png" style="width: 100%; max-width: 500px;" /></p>
 <ol>
-<li>Finaliza la instalación creando el usuario administrador de WordPress.</li>
+<li>Finish installation by creating the WordPress admin user.</li>
 </ol>
-<p><img alt="Instalación exitosa" src="../assets/docker%20wordpressmariadb9.png" style="width: 100%; max-width: 600px;" />
-<img alt="Escritorio WP" src="../assets/docker%20wordpressmariadb10.png" style="width: 100%; max-width: 600px;" /></p>
-<h2 id="4-migracion-de-mariadb-actualizacion">4. Migración de MariaDB (Actualización)</h2>
-<p>El objetivo es actualizar la versión de MariaDB de 10.6 a 10.7 sin perder datos.</p>
+<p><img alt="Successful Installation" src="../../assets/docker%20wordpressmariadb9.png" style="width: 100%; max-width: 600px;" />
+<img alt="WP Dashboard" src="../../assets/docker%20wordpressmariadb10.png" style="width: 100%; max-width: 600px;" /></p>
+<h2 id="4-mariadb-migration-update">4. MariaDB Migration (Update)</h2>
+<p>The goal is to upgrade the MariaDB version from 10.6 to 10.7 without losing data.</p>
 <ol>
 <li>
-<p><strong>Detener y eliminar</strong> el contenedor antiguo:
+<p><strong>Stop and remove</strong> the old container:
     <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>stop<span class="w"> </span>nuestromariadb
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>docker<span class="w"> </span>rm<span class="w"> </span>nuestromariadb
 </code></pre></div>
-    <em>Nota: Los datos persisten en <code>/home/sergi/mariadbdata</code> (en el host).</em></p>
-<p><img alt="Parada y borrado de contenedor" src="../assets/docker%20wordpressmariadb11.png" style="width: 100%; max-width: 600px;" /></p>
+    <em>Note: Data persists in <code>/home/sergi/mariadbdata</code> (on the host).</em></p>
+<p><img alt="Stop and delete container" src="../../assets/docker%20wordpressmariadb11.png" style="width: 100%; max-width: 600px;" /></p>
 </li>
 <li>
-<p><strong>Crear el nuevo contenedor</strong> (versión 10.7) mapeando el mismo volumen:
+<p><strong>Create the new container</strong> (version 10.7) mapping the same volume:
     <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>nuestromariadb<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span>--network<span class="w"> </span>redwp<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span>-v<span class="w"> </span>/home/sergi/mariadbdata:/var/lib/mysql<span class="w"> </span><span class="se">\</span>
@@ -766,14 +766,14 @@
 <a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">MARIADB_DATABASE</span><span class="o">=</span>cefiredb<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span>-d<span class="w"> </span>mariadb:10.7
 </code></pre></div></p>
-<p><img alt="Nueva versión MariaDB" src="../assets/docker%20wordpressmariadb12.png" style="width: 100%; max-width: 600px;" /></p>
+<p><img alt="New MariaDB version" src="../../assets/docker%20wordpressmariadb12.png" style="width: 100%; max-width: 600px;" /></p>
 </li>
 <li>
-<p><strong>Verificación</strong>:
-    Al acceder de nuevo a <code>http://localhost:8080</code>, el sitio debe funcionar correctamente, indicando que la base de datos se ha conservado y migrado con éxito.</p>
-<p><img alt="Funcionamiento correcto 1" src="../assets/docker%20wordpressmariadb13.png" style="width: 100%; max-width: 600px;" />
-<img alt="Funcionamiento correcto 2" src="../assets/docker%20wordpressmariadb14.png" style="width: 100%; max-width: 600px;" />
-<img alt="Funcionamiento correcto 3" src="../assets/docker%20wordpressmariadb15.png" style="width: 100%; max-width: 600px;" /></p>
+<p><strong>Verification</strong>:
+    Accessing <code>http://localhost:8080</code> again, the site should work correctly, indicating that the database has been preserved and migrated successfully.</p>
+<p><img alt="Correct Operation 1" src="../../assets/docker%20wordpressmariadb13.png" style="width: 100%; max-width: 600px;" />
+<img alt="Correct Operation 2" src="../../assets/docker%20wordpressmariadb14.png" style="width: 100%; max-width: 600px;" />
+<img alt="Correct Operation 3" src="../../assets/docker%20wordpressmariadb15.png" style="width: 100%; max-width: 600px;" /></p>
 </li>
 </ol>
 
@@ -799,7 +799,7 @@
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  Volver al principio
+  Back to top
 </button>
         
       </main>
@@ -831,10 +831,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

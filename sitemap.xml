@@ -1,3 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>None./</loc>
+        <lastmod>2026-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="None"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+    </url>
+    <url>
+        <loc>Noneconclusiones/</loc>
+        <lastmod>2026-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Noneconclusiones/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/conclusiones/"/>
+    </url>
+    <url>
+        <loc>Noneinstalacion/</loc>
+        <lastmod>2026-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Noneinstalacion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/instalacion/"/>
+    </url>
+    <url>
+        <loc>Noneintroduccion/</loc>
+        <lastmod>2026-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Noneintroduccion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/introduccion/"/>
+    </url>
+    <url>
+        <loc>Noneuso/</loc>
+        <lastmod>2026-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Noneuso/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/uso/"/>
+    </url>
+    <url>
+        <loc>Nonewordpress_mariadb/</loc>
+        <lastmod>2026-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonewordpress_mariadb/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/wordpress_mariadb/"/>
+    </url>
+    <url>
+        <loc>Noneen/</loc>
+        <lastmod>2026-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="None"/>
+    </url>
+    <url>
+        <loc>Noneen/conclusiones/</loc>
+        <lastmod>2026-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/conclusiones/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Noneconclusiones/"/>
+    </url>
+    <url>
+        <loc>Noneen/instalacion/</loc>
+        <lastmod>2026-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/instalacion/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Noneinstalacion/"/>
+    </url>
+    <url>
+        <loc>Noneen/introduccion/</loc>
+        <lastmod>2026-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/introduccion/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Noneintroduccion/"/>
+    </url>
+    <url>
+        <loc>Noneen/uso/</loc>
+        <lastmod>2026-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/uso/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Noneuso/"/>
+    </url>
+    <url>
+        <loc>Noneen/wordpress_mariadb/</loc>
+        <lastmod>2026-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/wordpress_mariadb/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonewordpress_mariadb/"/>
+    </url>
 </urlset>
