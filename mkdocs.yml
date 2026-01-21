@@ -30,11 +30,12 @@ theme:
 plugins:
   - search
   - i18n:
-      default_language: es
+      docs_structure: suffix
       languages:
-        es:
+        - locale: es
           name: Español
-        en:
+          default: true
+        - locale: en
           name: English
 
 nav:
