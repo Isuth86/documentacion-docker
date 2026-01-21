@@ -1,42 +1,44 @@
-# Explicación del Proyecto de Documentación
+# Memoria del Proyecto de Documentación
 
-Este documento detalla los componentes, configuración y extensiones utilizadas en la creación de este sitio de documentación con MkDocs.
+Esta memoria detalla el trabajo realizado para la creación del sitio de documentación técnica con MkDocs, cumpliendo con los requisitos especificados en la tarea.
 
-## Estructura del Proyecto
+## 1. Enlaces del Proyecto
 
-El proyecto sigue la estructura estándar de MkDocs:
+*   **Repositorio GitHub**: [https://github.com/Isuth86/documentacion-docker](https://github.com/Isuth86/documentacion-docker)
+*   **Sitio Web Publicado (GitHub Pages)**: [https://Isuth86.github.io/documentacion-docker/](https://Isuth86.github.io/documentacion-docker/)
 
-*   **mkdocs.yml**: Archivo de configuración global. Define el tema, navegación y extensiones.
-*   **docs/**: Directorio que contiene los archivos fuente en Markdown.
-    *   `index.md`: Página de inicio.
-    *   `introduccion.md`, `instalacion.md`, `uso.md`, `conclusiones.md`: Páginas de contenido.
-    *   `assets/`: Directorio para imágenes y recursos estáticos.
+## 2. Estructura y Contenido
 
-## Configuración y Tema
+El sitio web consta de más de 5 secciones principales, superando el mínimo requerido:
 
-Se ha utilizado el tema **Material for MkDocs** (`material`) por su diseño moderno y responsivo.
-*   **Idioma**: Configurado en español (`es`).
-*   **Paleta de Colores**: Color primario índigo con acentos azules. Incluye selector de modo claro/oscuro.
+1.  **Inicio** (`index.md`): Portada con presentación del proyecto y resumen.
+2.  **Introducción** (`introduccion.md`): Contexto sobre Docker y virtualización.
+3.  **Instalación** (`instalacion.md`): Guía paso a paso para desplegar LAMP.
+4.  **Práctica WordPress + MariaDB** (`wordpress_mariadb.md`): Página adicional con un caso práctico complejo (Multi-container).
+5.  **Uso y Funcionamiento** (`uso.md`): Instrucciones de operación y administración.
+6.  **Conclusiones** (`conclusiones.md`): Reflexiones finales sobre el aprendizaje.
 
-## Extensiones Markdown Implementadas
+## 3. Configuración Técnica (MkDocs)
 
-Se han habilitado varias extensiones en `mkdocs.yml` para enriquecer el contenido:
+### Tema y Personalización
+Se ha utilizado el tema **Material for MkDocs** configurado en `mkdocs.yml` con las siguientes características:
+*   **Idioma**: Español (`es`).
+*   **Paleta de colores**:
+    *   Modo Claro: Primario Índigo, Acento Azul.
+    *   Modo Oscuro: Esquema Slate, Primario Índigo, Acento Azul.
+*   **Navegación**: Barra superior con pestañas (`navigation.top`) y menús expandibles.
+*   **Buscador**: Habilitado con sugerencias y resaltado (`search.suggest`, `search.highlight`).
 
-1.  **Admonitions (Advertencias)**:
-    Permiten crear bloques de "Nota", "Advertencia", "Info", etc. Utilizadas en `index.md` y `uso.md`.
-    Ejemplo: `!!! info "Nota"`
+### Extensiones Markdown Habilitadas
+Para enriquecer el contenido y cumplir con la rúbrica, se han activado las siguientes extensiones:
 
-2.  **pymdownx.details (Bloques desplegables)**:
-    Permite ocultar/mostrar contenido complejo. Utilizado en la sección de "Solución de Problemas" en `uso.md`.
-    Ejemplo: `??? info "Título"`
+*   **Admonitions**: Bloques de aviso (Nota, Info, Advertencia) para resaltar información importante.
+*   **Pymdownx.details**: Bloques desplegables (collapsible) utilizados para secciones de "Solución de Problemas" o contenido extenso.
+*   **Pymdownx.highlight** y **superfences**: Resaltado de sintaxis para bloques de código con botón de copiado.
+*   **Pymdownx.tabbed**: Pestañas de contenido.
+*   **Attr_list**: Para añadir atributos personalizados a elementos HTML.
 
-3.  **pymdownx.highlight y superfences**:
-    Mejora el resaltado de sintaxis para bloques de código. Permite copiar el código con un clic.
+## 4. Despliegue y Control de Versiones
 
-4.  **pymdownx.tabbed**:
-    Permite crear pestañas de contenido (aunque no se ha abusado de su uso, está habilitado para futuras expansiones).
-
-## Despliegue
-
-El sitio está preparado para ser desplegado en **GitHub Pages**.
-El comando `mkdocs gh-deploy` compila el sitio y lo sube a la rama `gh-pages` automáticamente.
+*   **GitHub**: Se han realizado commits claros siguiendo la evolución del proyecto.
+*   **GitHub Pages**: El despliegue se ha automatizado mediante el comando `mkdocs gh-deploy`, alojando el sitio estático en la rama `gh-pages`.
