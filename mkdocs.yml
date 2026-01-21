@@ -1,6 +1,7 @@
 site_name: Documentación Servicios Docker
 site_description: Documentación técnica desplegar servicios en Docker (LAMP+WordPress y Portainer).
 site_author: Ismael Bermúdez Del Río
+site_url: https://Isuth86.github.io/documentacion-docker/
 repo_url: https://github.com/Isuth86/documentacion-docker
 edit_uri: edit/main/docs/
 
