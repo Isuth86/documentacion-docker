@@ -27,6 +27,16 @@ theme:
     - search.highlight
     - content.code.copy
 
+plugins:
+  - search
+  - i18n:
+      default_language: es
+      languages:
+        es:
+          name: Español
+        en:
+          name: English
+
 nav:
   - Inicio: index.md
   - Introducción: introduccion.md

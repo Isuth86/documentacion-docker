@@ -38,7 +38,15 @@ Para enriquecer el contenido y cumplir con la rúbrica, se han activado las sigu
 *   **Pymdownx.tabbed**: Pestañas de contenido.
 *   **Attr_list**: Para añadir atributos personalizados a elementos HTML.
 
-## 4. Despliegue y Control de Versiones
+## 4. Extras (Puntos Opcionales)
+
+Se ha implementado **Documentación Bilingüe (Español / Inglés)** para cumplir con los requisitos de mejora de nota:
+
+*   **Plugin**: Se ha utilizado `mkdocs-static-i18n`.
+*   **Funcionamiento**: Mediante un selector de idioma en la barra de navegación, el usuario puede cambiar instantáneamente entre la versión española e inglesa del sitio.
+*   **Estructura**: Se han duplicado y traducido los archivos `.md` principales añadiendo la extensión `.en.md` (ej: `index.en.md`).
+
+## 5. Despliegue y Control de Versiones
 
 *   **GitHub**: Se han realizado commits claros siguiendo la evolución del proyecto.
 *   **GitHub Pages**: El despliegue se ha automatizado mediante el comando `mkdocs gh-deploy`, alojando el sitio estático en la rama `gh-pages`.
